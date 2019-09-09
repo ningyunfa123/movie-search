@@ -1,0 +1,23 @@
+server:
+  port: 8086
+spring:
+  elasticsearch:
+    jest:
+      uris: http://10.64.28.19:8201
+      read-timeout: 5000
+  redis:
+    database: 0
+    host: 10.64.28.19
+    port: 8379
+    password:
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 5
+        min-idle: 0
+    timeout: 100000
+index:
+  movie:
+    name: movie_index
+    type: movie_index
